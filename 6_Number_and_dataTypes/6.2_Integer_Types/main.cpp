@@ -2,6 +2,7 @@
 
 int main(){
     
+    // An integer is stored in 4-bytes
     // Braced initializers
     // Variable may contain random garbage value. WARNING
     int elephant_count; // A random int number
@@ -18,7 +19,7 @@ int main(){
     // Use undefined number
     //int new_number{doesnt_exist};
 
-    // Store a fractional number in an empty variable, can not compile
+    // Store a fractional number in an empty variable, can not compile (compile-error)
     //int narrowing_conversion {2.9};
 
     std::cout << "Elephant count : " << elephant_count << std::endl;
@@ -34,13 +35,28 @@ int main(){
 
     //int bad_initialization ( doesnt_exist3 + doesnt_exist4 );
 
-    // Information lost. Less safe than braced initializers, can compile with chop-off value
+    // Information lost. Less safe than braced initializers, can compile with chop-off value (warning)
     int narrowing_conversion_functional (2.9);
 
     std::cout << "Apple count : " << apple_count << std::endl;
     std::cout << "Orange count : " << orange_count << std::endl;
     std::cout << "Fruit count : " << fruit_count << std::endl;
     std::cout << "Narrowing conversion : " << narrowing_conversion_functional << std::endl;
+
+    // Assignment notation
+    int bike_count = 2;
+    int truck_count = 7;
+    int vehicle_count = bike_count + truck_count;
+    int narrowing_conversion_assignment = 2.9;
+
+    std::cout << "Bike count : " << bike_count << std::endl;
+    std::cout << "Truck count : " << truck_count << std::endl;
+    std::cout << "Vehicle count : " << vehicle_count << std::endl;
+    std::cout << "Narrowing conversion : " << narrowing_conversion_assignment << std::endl;
+
+    // Check the size (in bytes) with sizeof
+    std::cout << "sizeof int : " << sizeof(int) << std::endl;
+    std::cout << "sizeof truck_count : " << sizeof(truck_count) << std::endl;
 
     return 0;
 }
