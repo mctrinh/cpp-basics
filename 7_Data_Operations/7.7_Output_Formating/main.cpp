@@ -34,7 +34,7 @@ int main(){
     std::cout << std::endl;
 
 
-    //std::setw() : Adjusts the field with for the item about to be printed. 
+    //std::setw() : Adjusts the field width for the item about to be printed. 
     //The setw() manipulator only affects the next value to be printed.
     
     std::cout << "Unformatted table : " << std::endl;
@@ -148,18 +148,18 @@ int main(){
     bool condition {true};
     bool other_condition {false};
     
-    std::cout << "condition : " << condition << std::endl;
-    std::cout << "other_condition : " << other_condition << std::endl;
+    std::cout << "condition : " << condition << std::endl; // 1
+    std::cout << "other_condition : " << other_condition << std::endl; // 0
     
     std::cout << std::endl;
     std::cout << std::boolalpha;
-    std::cout << "condition : " << condition << std::endl;
-    std::cout << "other_condition : " << other_condition << std::endl;
+    std::cout << "condition : " << condition << std::endl; // true
+    std::cout << "other_condition : " << other_condition << std::endl; // false
     
     std::cout << std::endl;
     std::cout << std::noboolalpha;
-    std::cout << "condition : " << condition << std::endl;
-    std::cout << "other_condition : " << other_condition << std::endl;
+    std::cout << "condition : " << condition << std::endl; // 1
+    std::cout << "other_condition : " << other_condition << std::endl; // 0
     
     //===================================================================
     std::cout << std::endl;
@@ -169,7 +169,7 @@ int main(){
     int pos_num {34};
     int neg_num {-45};
     
-    std::cout << "pos_num : " << pos_num << std::endl;
+    std::cout << "pos_num : " << pos_num << std::endl; // noshowpos is default
     std::cout << "neg_num : " << neg_num << std::endl;
     
     std::cout << std::endl;
@@ -214,8 +214,8 @@ int main(){
     std::cout << std::endl;
     std::cout << "double_var in different bases : " << std::endl;
     std::cout << "double_var (dec) : " << std::dec << double_var << std::endl;
-    std::cout << "double_var (hex) : " << std::hex << double_var << std::endl;
-    std::cout << "double_var (oct) : " << std::oct << double_var << std::endl;
+    std::cout << "double_var (hex) : " << std::hex << double_var << std::endl; // floating point is not affected
+    std::cout << "double_var (oct) : " << std::oct << double_var << std::endl; // floating point is not affected
     
     
     //===================================================================
@@ -257,14 +257,14 @@ int main(){
     
     std::cout << std::endl;
     std::cout << "double values (fixed) : " << std::endl;
-    std::cout << std::fixed;
+    std::cout << std::fixed;    // show with decimal point
     std::cout << "a : " << a << std::endl;
     std::cout << "b : " << b << std::endl;
     std::cout << "c : " << c << std::endl;
     
     std::cout << std::endl;
     std::cout << "double values (scientific) : " << std::endl;
-    std::cout << std::scientific;
+    std::cout << std::scientific;   // show in scientific
     std::cout << "a : " << a << std::endl;
     std::cout << "b : " << b << std::endl;
     std::cout << "c : " << c << std::endl;
