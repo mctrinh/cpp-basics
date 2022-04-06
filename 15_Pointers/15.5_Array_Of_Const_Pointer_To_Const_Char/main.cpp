@@ -24,10 +24,10 @@ int main(){
 
     // Can swap for new student though.
     const char * new_student {"Bob the Great"};
-    //students[0] = new_student; // Compiler error
+    // students[0] = new_student; // Compiler error
 
 
-   //Print out the students
+   // Print out the students
 	std::cout << std::endl;
     std::cout << "Printing out the students : " << std::endl;
     for ( const char * student : students){

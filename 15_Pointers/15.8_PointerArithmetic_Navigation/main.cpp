@@ -2,7 +2,7 @@
 
 int main(){
 
-//Increment/ decrement pointer addresses manually
+// Increment/ decrement pointer addresses manually
 	
     int scores[10] {11,12,13,14,15,16,17,18,19,20};
 
@@ -59,20 +59,20 @@ int main(){
 	std::cout << std::endl;
     std::cout << "Pointer arithmetic on p_scores pointer and a for loop: " << std::endl;
     for ( size_t i{0} ; i < std::size(scores) ; ++i){
-        std::cout <<"Value : "<< *(p_score + i) << std::endl; // scores[i]
+        std::cout <<"Value : "<< *(p_score + i) << std::endl; // scores[i], moves formard by i * sizeof(int)
     }
     */
 
 
-    //Can also do arithmetic on the array name
-    //just like any pointer.
+    // Can also do arithmetic on the array name
+    // just like any pointer.
     /*
     p_score = scores;
     
 	std::cout << std::endl;
     std::cout << "Pointer arithmetic on array name: " << std::endl;
     for ( size_t i{0} ; i < std::size(scores) ; ++i){
-        std::cout <<"Value : "<< *(scores + i) << std::endl;
+        std::cout <<"Value : "<< *(scores + i) << std::endl;   // array name is a special pointer
 	}
     */
 
@@ -82,16 +82,16 @@ int main(){
     std::cout << "Elements in reverse order with decrementing pointer arithmetic: " << std::endl;
     for ( size_t i{std::size(scores)} ; i > 0 ; --i){
         std::cout <<"Value : "<< *(scores + i -1) << std::endl;	// Here we do the -1 thing, because
-																//scores is already pointing to the first
-																//element in the array.
+																// scores is already pointing to the first
+																// element in the array.
     }
     */
 
-	//Print in reverse order with -- operator on p_score
+	// Print in reverse order with -- operator on p_score
     /*
 	std::cout<< std::endl;
     std::cout << "Elements in reverse order -- arithmetic on the p_scores pointer: " << std::endl;
-    p_score = scores + std::size(scores) -1;
+    p_score = scores + std::size(scores) -1;     // Pointer of the last element
 	for ( size_t i{std::size(scores)} ; i > 0 ; --i){
         std::cout <<"Value : "<< *(p_score--) << std::endl;		// Here we do the -1 thing, because
 																//scores is already pointing to the first
@@ -108,6 +108,7 @@ int main(){
     }
     */
 
+    
     p_score = scores;
     
     scores[0] = 31; // Array index notation
@@ -119,6 +120,7 @@ int main(){
     for ( size_t i{0} ; i < std::size(scores) ; ++i){
         std::cout <<"Value : "<< scores[i] << std::endl;
     }
+    
 
     return 0;
 }

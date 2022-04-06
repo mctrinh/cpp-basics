@@ -24,6 +24,7 @@ int main(){
 	std::cout << "*p_number1 : " << *p_number1 << std::endl;
     */
 
+
    //BAD
 	//Writing into uninitialized pointer through dereference
     /*
@@ -38,7 +39,7 @@ int main(){
     */
 	
 	
-	//Initializing pointer to null
+	// Initializing pointer to null
     /*
 	//int *p_number3{nullptr}; // Also works
 	int * p_number3 {}; // Initialized with pointer equivalent of zero : nullptr
@@ -49,13 +50,13 @@ int main(){
 	
 	std::cout << std::endl;
 	std::cout << "Reading and writting through nullptr : " << std::endl;
-	//std::cout << "p_number3 : " << p_number3 << std::endl;
-	//std::cout << "*p_number3 : " << *p_number3 << std::endl;// Reading from nullptr
+	std::cout << "p_number3 : " << p_number3 << std::endl;	// nullptr
+	std::cout << "*p_number3 : " << *p_number3 << std::endl;// Reading from nullptr
 															// BAD, CRASH.
                                                             */
 
 
-    //Dynamic heap memory
+    // Dynamic heap memory
     /*
 	int *p_number4{nullptr};
 	p_number4 = new int; 	// Dynamically allocate space for a single int on the heap
@@ -75,10 +76,10 @@ int main(){
     p_number4 = nullptr;
     */
 
-
-    //It is also possible to initialize the pointer with a valid
-	//address up on declaration. Not with a nullptr
-     int *p_number5{ new int}; // Memory location contains junk value
+   
+    // It is also possible to initialize the pointer with a valid
+	// address up on declaration. Not with a nullptr
+     int *p_number5{ new int}; // Memory location contains junk values
      int *p_number6{ new int (22) }; // use direct initialization
      int *p_number7{ new int { 23 } }; // use uniform initialization
 	 
@@ -93,7 +94,7 @@ int main(){
 	 std::cout << "p_number7 : " << p_number7 << std::endl;
 	 std::cout << "*p_number7 : " << *p_number7 << std::endl;
 	 
-	 //Remember to release the memory
+	 // Remember to release the memory
 	  delete p_number5;
 	  p_number5 = nullptr;
 	  
@@ -104,9 +105,9 @@ int main(){
 	  p_number7 = nullptr;
 
 
-      //Can reuse pointers
+      // Can reuse pointers
       p_number5 = new int(81);
-      std::cout << "*p_number : " << *p_number5 << std::endl;
+      std::cout << "*p_number5 : " << *p_number5 << std::endl;
 
 
       delete p_number5;
@@ -119,9 +120,6 @@ int main(){
 
       delete p_number5;
       delete p_number5;
-
-
-      //
 
                                                             
    std::cout << "Program is ending well" << std::endl;

@@ -8,17 +8,17 @@ int main(){
      int * p_arr1 {arr1};
      int * p_arr0 {arr0};
 
-    //Print arr0
+    // Print arr0
     std::cout << "arr0 : ";
     for (size_t i{}; i < std::size(arr0); ++i) {
         std::cout << *(p_arr0 + i) << " ";
     }
     std::cout << std::endl;
 
-    //Print arr1
+    // Print arr1
     std::cout << "arr1 : ";
     for (size_t i{}; i < std::size(arr1); ++i) {
-        std::cout << *(p_arr0 + i) << " ";
+        std::cout << *(p_arr1 + i) << " ";
     }
     std::cout << std::endl;
 

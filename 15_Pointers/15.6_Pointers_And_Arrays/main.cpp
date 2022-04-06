@@ -6,12 +6,12 @@ int main(){
     
     int * p_score { scores};
     
-    //Print the address
+    // Print the address
     std::cout << "scores : " << scores << std::endl; // Array
     std::cout << "p_score : " << p_score << std::endl;// Pointer
     std::cout << "&scores[0]  : " << &scores[0] << std::endl;
     
-    //Print the content at that address
+    // Print the content at that address
 	std::cout << std::endl;
 	std::cout << "Printing out data at array address : " << std::endl;
     std::cout << "*scores : " << *scores << std::endl;

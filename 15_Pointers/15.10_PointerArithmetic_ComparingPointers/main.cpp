@@ -7,11 +7,11 @@ int main(){
     int * pointer1 {&scores[0]};
     int * pointer2 {&scores[8]};
 	
-    //Can also compare pointers
+    // Can also compare pointers
     
-    //The further you go in the array, the bigger the address
+    // The further you go in the array, the bigger the address
     
-    std::cout << "Comparing pointers : " <<std::boolalpha <<  std::endl;
+    std::cout << "Comparing pointers : " << std::boolalpha << std::endl;
 	
     std::cout << "pointer1 > pointer2 : " <<  (pointer1 > pointer2) << std::endl;
     std::cout << "pointer1 < pointer2 : " << (pointer1 < pointer2) << std::endl;
