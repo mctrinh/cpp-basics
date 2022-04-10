@@ -19,11 +19,11 @@ int main(){
    std::cout << "Case 2 : Deleted pointer" << std::endl;
    int * p_number1 {new int{67}};
    
-   std::cout << "*p_number1 (before delete) : " << *p_number1 << std::endl;
+   std::cout << "*p_number1 (before delete) : " << *p_number1 << std::endl; // 67
    
    delete p_number1;
 		
-   std::cout << "*p_number1(after delete) : " << *p_number1 << std::endl;
+   std::cout << "*p_number1(after delete) : " << *p_number1 << std::endl;   // garbage
    */
 
 
@@ -35,15 +35,15 @@ int main(){
     int *p_number3 {new int{83}};
     int *p_number4 {p_number3};
     
-    std::cout << "p_number3 - " << p_number3 << " - " << *p_number3 << std::endl;
-    std::cout << "p_number4 - " << p_number4 << " - " << *p_number4 << std::endl;
+    std::cout << "p_number3 - " << p_number3 << " - " << *p_number3 << std::endl;   // 83
+    std::cout << "p_number4 - " << p_number4 << " - " << *p_number4 << std::endl;   // 83
     
     //Deleting p_number3
     delete p_number3;
     
     //p_number4 points to deleted memory. Dereferncing it will lead to
 	//undefined behaviour : Crash/ garbage or whatever
-    std::cout<< "p_number4(after deleting p_number3) - " << p_number4 << " - " << *p_number4 << std::endl;
+    std::cout << "p_number4(after deleting p_number3) - " << p_number4 << " - " << *p_number4 << std::endl;  // garbage
     */
 
 
@@ -56,7 +56,7 @@ int main(){
 	
 	//Check for nullptr before use
 	if(p_number6!= nullptr){
-		std::cout << "*p_number6 : " << *p_number6 << std::endl;
+		std::cout << "*p_number6 : " << *p_number6 << std::endl; // 87
 	}else{
         std::cout << "Invalid address" << std::endl;
     }
@@ -107,7 +107,7 @@ int main(){
     p_number8 = nullptr;
     
     if(!(p_number8 == nullptr)){ // Only use slave pointers when master pointer is valid
-           std::cout<< "p_number9 - " << p_number9 << " - " << *p_number9 << std::endl;
+           std::cout<< "p_number9 - " << p_number9 << " - " << *p_number9 << std::endl;     // garbage is using <if(p_number8 == nullptr)>
     }else{
         std::cerr << "WARNING : Trying to use an invalid pointer" << std::endl;
     }
