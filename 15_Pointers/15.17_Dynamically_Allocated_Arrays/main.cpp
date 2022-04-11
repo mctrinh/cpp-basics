@@ -2,13 +2,14 @@
 
 int main(){
 
+    // the unsigned integer type of the result of the sizeof operator
     const size_t size{10};
     
     //Different ways you can declare an array
 	//dynamically and how they are initialized
 	
     double *p_salaries { new double[size]}; // salaries array will
-															//contain garbage  values
+															//contain garbage values
     int *p_students { new(std::nothrow) int[size]{} }; // All values initialized to 0 
     
     double *p_scores { new(std::nothrow) double[size]{1,2,3,4,5}}; // Allocating memory space
@@ -20,7 +21,7 @@ int main(){
 
     //nullptr check and use the allocated array
     if(p_scores){
-        std::cout << "size of scores (it's a regular pointer) : " << sizeof(p_scores) << std::endl;
+        std::cout << "size of scores (it's a regular pointer) : " << sizeof(p_scores) << std::endl;  // 8 bytes
         std::cout << "Successfully allocated memory for scores."<< std::endl;
         
         //Print out elements. Can use regular array access notation, or pointer arithmetic
