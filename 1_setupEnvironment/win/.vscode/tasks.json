@@ -3,14 +3,14 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "Build with GCC 11.2.0",
+			"label": "Build with GCC 12.1.0",
 			"command": "C:\\mingw64\\bin\\g++.exe",
 			"args": [
 				"-g",
 				"-std=c++20",
 				"${workspaceFolder}\\*.cpp",
 				"-o",
-				"${fileDirname}\\rooster.exe"
+				"${fileDirname}\\main.exe"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
@@ -23,14 +23,14 @@
 		},
 		{
 			"type": "cppbuild",
-			"label": "Build with Clang 12.0.1",
+			"label": "Build with Clang 14.0.4",
 			"command": "C:\\mingw64\\bin\\clang++.exe",
 			"args": [
 				"-g",
 				"-std=c++20",
 				"${workspaceFolder}\\*.cpp",
 				"-o",
-				"${fileDirname}\\rooster.exe"
+				"${fileDirname}\\main.exe"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
@@ -50,7 +50,7 @@
 				"/std:c++latest",
 				"/EHsc",
 				"/Fe:",
-				"${fileDirname}\\rooster.exe",
+				"${fileDirname}\\main.exe",
 				"${workspaceFolder}\\*.cpp"
 			],
 			"options": {
@@ -61,6 +61,6 @@
 			],
 			"group": "build",
 			"detail": "compiler: cl.exe"
-		}
+		},
 	]
 }
