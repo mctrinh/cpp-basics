@@ -69,7 +69,7 @@ int main(){
 
 
 	//c_str method
-    /*
+    // /*
 	//doc : https://en.cppreference.com/w/cpp/string/basic_string/c_str
 	//returns const char * to the wrapped string. You shouldn't use 
 	//it to modify data in the string.
@@ -77,9 +77,10 @@ int main(){
     const char * wrapped_c_string = str2.c_str();
     std::cout << "Wrapped c string : " << wrapped_c_string << std::endl;
     //wrapped_c_string[0] = 'e'; // Compiler error
-    */
+    // */
 
    //data()
+   /*
     std::string str2 { "Hello World"};
     
     char * data = str2.data();
@@ -89,6 +90,6 @@ int main(){
     
     std::cout << "Wrapped c string (after modification) : " << data << std::endl;
     std::cout << "Original string (after modification ) :" << str2 << std::endl;
-    
+    */
     return 0;
 }

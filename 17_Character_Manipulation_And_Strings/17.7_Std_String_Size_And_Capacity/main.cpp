@@ -63,6 +63,7 @@ int main(){
 
 
     //shrink_to_fit
+    // /*
     std::string str1 {"Hello World"}; // 11
     str1.reserve(100);
 
@@ -73,6 +74,7 @@ int main(){
  
 	std::cout << "str1 capacity : " << str1.capacity() << std::endl; //11
 	std::cout << "str1 size : " << str1.size() << std::endl;//11
+    // */
 
     return 0;
 }

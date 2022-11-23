@@ -64,6 +64,7 @@ int main(){
 
 	//float, double,long double : 
 	//std::stof, std::stod, std::stold
+	// /*
     std::string number_str = "34.567";
 
 	float float_var = std::stof(number_str);
@@ -77,6 +78,7 @@ int main(){
 	long double long_double_var = std::stold(number_str);
 	std::cout << "long_double_var : " << long_double_var << std::endl;
 	std::cout << "sizeof(long_double_var) : " << sizeof(long_double_var) << std::endl;
+	// */
 
     return 0;
 }

@@ -12,7 +12,7 @@ int main(){
     std::cout << "He said \"Get out of here immediately!\"" << std::endl;
     */
 
-   /*
+//    /*
     std::string todo_list{ "\tClean the house\n\tWalk the dog\n\tDo laundry\n\tPick groceries" };
     std::string windows_path{ "D:\\sandbox\\testProject\\hello.txt" };
     std::string linux_path{ "/home/username/files/hello.txt" };
@@ -22,7 +22,7 @@ int main(){
     std::cout << "windows_path : " << windows_path << std::endl;
     std::cout << "linux_path : " << linux_path << std::endl;
     std::cout << "hint : " << hint << std::endl;
-    */
+    // */
 
    std::cout << "\a" << std::endl ;
 

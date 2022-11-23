@@ -64,7 +64,7 @@ int main(){
 
 
     //std::strcpy - signature : char* strcpy( char* dest, const char* src );
-    /*
+    // /*
     std::cout << std::endl;
 	std::cout << "std::strcpy : " << std::endl;
     const char* source3 = "C++ is a multipurpose programming language.";
@@ -77,7 +77,7 @@ int main(){
     std::cout << "sizeof(dest3) : " << sizeof(dest3) << std::endl;
     std::cout << "std::strlen(dest3) : " << std::strlen(dest3) << std::endl;
     std::cout << "dest3 : " << dest3 << std::endl;
-    */
+    // */
 
 
     //std::strncpy : Copy n characters from src to dest -

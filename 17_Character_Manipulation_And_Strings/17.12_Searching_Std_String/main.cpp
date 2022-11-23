@@ -76,7 +76,7 @@ int main(){
 	//size_type find( const CharT* s, size_type pos = 0 ) const;
 	//Finds the first substring equal to the character string pointed to by s
 	//pos : the position where we start searching in the std::string
-	
+	// /*
 	std::string string2 = "beer is packaged by her in beer cans around here.";
 	const char * c_string2{"her"};
 	
@@ -86,6 +86,6 @@ int main(){
 	}else{
         std::cout << "Could not find the string :  " << (c_string2) <<  std::endl;
 	}
-
+    // */
     return 0;
 }

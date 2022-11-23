@@ -17,14 +17,14 @@ int main(){
 	std::cout << std::endl;
 	std::cout << "Modify original variable through reference : " << std::endl;
 	
-	//ref_age++; //Mofify through reference; Error
+	//ref_age++; //Mofify through reference; Error due to const
 	
 	std::cout << "age : " << age << std::endl;
 	std::cout << "ref_age : " << ref_age << std::endl;
     
 
    //Simulating reference behavior with pointers
-   //Bconst int * const p_age {&age};
+   //const int * const p_age {&age};
    //*p_age = 45;
 
     return 0;

@@ -42,7 +42,7 @@ int main(){
   /*
   //Raw string literals with assignments
   const char* c_string {  R"(
-	Clean the house
+	// Clean the house
 	Walk the dog
 	Do Laundry
 	Pick groceries
@@ -51,7 +51,7 @@ int main(){
    std::cout << c_string << std::endl;
    */
 
-    /*
+    // /*
     //Fixing other escaped strings
     std::string windows_path1 {R"(D:\sandbox\testProject\hello.txt)"};
 	std::string linux_path1 {R"(/home/username/files/hello.txt)"};
@@ -60,7 +60,7 @@ int main(){
 	std::cout << "windows_path1 : " << windows_path1 << std::endl;
 	std::cout << "linux_path1 : " << linux_path1 << std::endl;
 	std::cout << "hint1 : " << hint1 << std::endl;
-    */
+    // */
 
    //Problematic raw string literals
    std::string sentence {R"--(The message was "(Stay out of this!)")--"};

@@ -127,14 +127,14 @@ int main(){
 
 
    //Don't view non null terminated strings
-   /*
+//    /*
     char char_array3[] {'H','e','l','l','o'};
     std::string_view sv15 {char_array3,std::size(char_array3)};
     
     std::cout << sv15 << " has " << std::strlen(sv15.data()) << " characters(s)" << std::endl;
     std::cout <<"sv15.data is  : " <<  sv15.data() << std::endl;
     std::cout << "sv15 is : " << sv15 << std::endl;
-    */
+    // */
 
 
    //std::string behaviors

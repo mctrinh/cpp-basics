@@ -8,7 +8,7 @@ int main(){
 	std::string hello_str{"Hello"};
     std::string bello_str{"Bello"};
     
-    /*
+    // /*
 	//Using the comparison operators
 	std::cout << std::endl;
 	std::cout << "Comparing with comparison operators : " << std::endl;
@@ -20,10 +20,10 @@ int main(){
     std::cout << hello_str << ">=" <<  bello_str <<" : " << (hello_str >= bello_str) << std::endl; // true
     std::cout << hello_str << "<" <<  bello_str <<" : " << (hello_str < bello_str) << std::endl; // false
     std::cout << hello_str << "<=" <<  bello_str <<" : " << (hello_str <= bello_str) << std::endl; // false
-    */
+    // */
 
 	//Can even compare std::strings to C-strings
-    /*
+    // /*
     const char * c_string1 {"Bello"};
     hello_str = "Hello";
     
@@ -33,7 +33,7 @@ int main(){
     std::cout << c_string1 << " (C-String) ==" <<  hello_str <<" : " << (c_string1 == hello_str) << std::endl;//false
 	std::cout << c_string1 << " (C-String) >=" <<  hello_str <<" : " << (c_string1 >= hello_str) << std::endl;//false
 	std::cout << c_string1 << " (C-String) <" <<  hello_str <<" : " << (c_string1 < hello_str) << std::endl; // true
-	*/
+	// */
 
 
 	//Be careful about char arrays not terminated with null character

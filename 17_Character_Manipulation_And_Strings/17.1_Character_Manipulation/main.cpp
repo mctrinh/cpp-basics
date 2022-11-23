@@ -3,7 +3,7 @@
 int main(){
 
     //Check if character is alphanumeric
-    /*
+    // /*
     std::cout << std::endl;
     std::cout << "std::isalnum : "<<std::endl;
 	
@@ -17,10 +17,10 @@ int main(){
 	}else{
 		std::cout << input_char <<  " is not alphanumeric." << std::endl;
 	}
-    */
+    // */
 
     //Check if character is alphabetic
-    /*
+    // /*
     std::cout << std::endl;
     std::cout << "std::isalpha : "<<std::endl;
     std::cout <<   "C is alphabetic : " << std::isalpha('e') << std::endl; // 1
@@ -31,10 +31,10 @@ int main(){
     }else{
         std::cout << 'e' << " is NOT alphabetic" << std::endl;        
     }
-    */
+    // */
 
 	//Check if a character is blank
-    /*
+    // /*
     std::cout << std::endl;
     std::cout << "std::isblank : "<<std::endl;
     char message[] {"Hello there. How are you doing? The sun is shining."};
@@ -50,10 +50,10 @@ int main(){
         }
     }
     std::cout << "In total we found " << blank_count << " blank characters."<< std::endl;
-   */
+//    */
 
 	//Check if character is lowercase or uppercase
-    /*
+    // /*
     std::cout << "std::islower and std::isupper : "<<std::endl;
     std::cout << std::endl;
     char thought[] {"The C++ Programming Language is one of the most used on the Planet"};
@@ -75,11 +75,11 @@ int main(){
     std::cout << std::endl;
     std::cout << "Found " << lowercase_count << " lowercase characters and "
                 <<upppercase_count << " uppercase characters."<<  std::endl;
-    */
+    // */
 
 
     //Check if a character is a digit
-    /*
+    // /*
     std::cout << std::endl;
     std::cout << "std::isdigit : "<<std::endl;
     char statement[] {"Mr Hamilton owns 221 cows. That's a lot of cows! The kid exclamed."};
@@ -94,7 +94,7 @@ int main(){
         }
     }
     std::cout << "Found " << digit_count << " digits in the statement string" << std::endl;
-    */
+    // */
 
     //Turning a character to lowercase using the std::tolower() function
     std::cout << std::endl;

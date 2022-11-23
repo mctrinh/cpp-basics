@@ -106,7 +106,7 @@ int main(){
 
     //Find the first occurrence of a character 
 	//CODE STOLEN FROM THE DOCS : 
-    /*
+    // /*
     std::cout << std::endl;
     std::cout << "std::strchr : " << std::endl;
 	//doc : https://en.cppreference.com/w/cpp/string/byte/strchr
@@ -128,7 +128,7 @@ int main(){
 		++iterations;
 	}
 	std::cout << "iterations : " << iterations << std::endl;
-    */
+    // */
 
 
     //A lesser version that will loop 25 times

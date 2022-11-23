@@ -4,7 +4,7 @@
 int main(){
 
 	//Concatenating two strings : The + operator
-    /*
+    // /*
 	std::cout << std::endl;
 	std::cout << "Concatenating two strings : " << std::endl;
 	std::string str1{"Hello"};
@@ -12,18 +12,18 @@ int main(){
 	std::string message = str1 + " my " + str2;
         
 	std::cout << "message : " << message << std::endl;
-    */
+    // */
 
 	//Concatenating string literals : No, No - Compiler Error
 	//String literals are expanded into const char* arrays and C++ doesn't know
 	//how to add arrays with the + operator. Hence the compiler error.
-    /*
+    // /*
 	std::cout << std::endl;
 	std::cout << "Concatenating string literals : No,No! Compiler Error " << std::endl;
 	
 	//std::string str3 { "Hello" + "World"}; // Compiler Error
 	//std::string str4 = "Hello" + "World";  // Compiler Error
-    */
+    // */
 
 	//A few ways around string literal concatenation
     /*
@@ -115,7 +115,7 @@ int main(){
 
 
 	//Appending C-strings and char arrays
-    /*
+    // /*
 	std::cout << std::endl;
 	std::cout << "Appending C-Strings and char arrays : "<<std::endl;
 	const char message1[] {"World"};
@@ -124,8 +124,8 @@ int main(){
 	std::cout <<" + char array : "  <<  std::string{"Hello "} + message1 << std::endl;
 	std::cout <<" + C-String : "  <<  std::string{"Hello "} + message2 << std::endl;
 	std::cout <<"append char array : "  <<  std::string{"Hello "}.append(message1) << std::endl;
-	std::cout <<"append C-String : "  <<  std::string{"Hello "}.append( message2)<< std::endl;
-	*/
+	std::cout <<"append C-String : "  <<  std::string{"Hello "}.append(message2)<< std::endl;
+	// */
 
     //Concatenating std::strings and numbers
         
